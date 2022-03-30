@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+       <nav> <a href="index.html"><img src="assets/logo-Rock.png" alt="logo-Rock"></a>
+        <nav> 
+            <ul><!--lista/menu-->
+                 <li><a href="cd.html">Cd</a></li>
+                 <li><a href="vinilos.html">vinilos</a></li>
+                 <li><a href="recitales.html">recitales</a></li>
+                 <li><a href="contacto.html">contacto</a></li>
+ 
+             </ul>   
+        </nav>
+     </header>
+     <main>
+         <section>
+             <div><!--formulario-->
+                <form action="envio.php" method="post" >  
+                    <fieldset>
+                        <legend>datos personales</legend>
+                        <label for="nombre">nombre y apellido</label>
+                        <input type="text" placeholder="juan carlos" name="nombre" id="nombre">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <legend>info del pedido</legend>
+                        <label for="cd">cd</label>
+                        <input type="checkbox" value="cd" id="cd" name="cd">
+                        <label for="vinilos">vinilos</label>
+                        <input type="checkbox" value="vinilos" id="vinilos" name="vinilos">
+                        <label for="entradas">entradas</label>
+                        <input type="checkbox" value="entradas" id="entradas" name="entradas">
+                    </fieldset>
+                    <fieldset>
+                        <legend>info del pedido</legend>
+                        <label for="domicilio">envio a domicilio</label>
+                        <input type="radio" value="domicilio" name="envio" id="domicilio">
+                        <label for="local">retiro en el local</label>
+                        <input type="radio" value="local" name="envio" id="local">
+                        <select name="localidad" id="localidad">
+                        <option value="caba">ciudad de buenos aires</option>
+                        <option value="bsas">buenos aires</option>
+                        <option value="interior">interior del pais</option>
+                        </select>
+                    </fieldset>
+                    <label for="deja tu mensaje"></label>
+                    <textarea name="comentario" id="comentario" placeholder="deja tu comentario" cols="30" rows="10"></textarea>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="candelar">
+                </form>
+            </div>
+         </section>
+
+     </main>
+     <footer>
+         <!--aca va el mapa-->
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.6508282093578!2d-57.96542638476123!3d-34.940293080373735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e87d76044321%3A0x34d074b651c329ef!2sAv.%2060%201645%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1644895198458!5m2!1ses-419!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://facebook.com" target="_blank" >
+                    <img src="assets/facebook.png" alt="facebook">
+                </a>
+    
+                <a href="https://instagram.com" target="_blank" >
+                    <img src="assets/instagram.jpg" alt="instagram">
+                </a>
+            </div>
+         <div> <!--aca la imagen del logo-->
+            
+         </div>
+         
+     </footer>
+    
+</body>
+</html>

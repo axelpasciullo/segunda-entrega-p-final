@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    display: grid;
+}
+
+header h1{
+    font-size: 3rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+
+header{
+    background-image: url(../assets/hero-img5.png);
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    background-color: rgba( 122, 0, 4, .5)
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover{
+    background: rgba(107, 102, 100, .8);
+    color: rgb(122, 0, 4);
+}
+
+
+main section div h2{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    color: darkblue;
+}
+
+main section div iframe{
+    justify-items: end;
+    justify-content: end;
+}
+
+
+
+.main__section--2{
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 1px 2px 1px 1px;
+    justify-content: center;
+    justify-content: space-evenly;
+    border-style: solid;
+
+    
+}
+
+/*.divA{
+    display: inline-block;
+    border-color: black;
+    border-style: solid;
+    padding: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    position: relative;
+}*/
+
+.contenedorGrid{
+    display: grid;
+}
+
+.div__nosotros{
+    text-align: start;
+    font-size: 1.5rem;
+    width: 50%;
+    height: auto;
+    padding-left: 10px ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /*margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 10px;*/
+    /*margin: 10px auto;*/
+}
+
+.iframe__main{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.section__img{
+    height: auto;
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.divA:hover .imgA{
+    transform: scale(1.2);
+    /*transform: rotate(30deg);*/
+}
+.imgA{
+    transition: all .3s;
+}
+
+.divB:hover .imgB{
+transform: scale(1.2);
+}
+
+.imgB{
+    transition: all .3s;
+}
+
+.divC:hover .imgC{
+    transform: scale(1.2);
+}
+
+.imgC{
+    transition: all .3s;
+}
+
+footer div a img{
+    width: 5%;
+    height: auto;
+}
+
+body{
+    background: linear-gradient(to top, yellow, red); 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+@media screen and (min-width:768px) {
+    
+header{
+    background-image: url(../assets/hero-img5.png);
+    
+}
+
+
+
+
+    grid-template-columns: ;
+
+    
+}
